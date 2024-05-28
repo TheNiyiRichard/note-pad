@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>My Notes</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>My Notes</h1>
+        <div class="nav-search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search Notes" oninput="searchNotes()">
+        </div>
+        <div class="nav-buttons">
+            <button class="nav-btn add-note-btn" onclick="newNote()">+ Add Note</button>
+            <button class="nav-btn toggle-theme-btn" onclick="toggleTheme()"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </nav>
+
+    <div id="notes" class="notes-container">
+        <!-- Notes will appear here -->
+    </div>
+
+    <footer>
+        <p><a href="https://github.com/TheNiyiRichard/" target="_blank">Made by Adeniyi Richard</a></p>
+    </footer>
+
+    <script src="assets/scripts.js"></script>
+</body>
+
+</html>
